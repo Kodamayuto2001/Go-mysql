@@ -49,12 +49,19 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
+	"github.com/joho/godotenv"
+	"os"
 
 	_ "github.com/go-sql-driver/mysql"
 )
 
 func main() {
-	db, err := sql.Open("mysql","****:*************************@/go_mysql_test")
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	db,err := sql.Open("mysql",os.Getenv("DB_ROLE")+":"+os.Getenv("DB_PASSWORD")+"@/"+os.Getenv("DB_NAME"))
 	if err != nil {
 		log.Fatal(err)
 	}
