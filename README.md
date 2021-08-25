@@ -1,2 +1,3 @@
 # Go-mysql
-![image](https://user-images.githubusercontent.com/55943803/130874586-cbee028c-cba6-4a72-9a89-d4fea2372b13.png)
+![image](https://user-images.githubusercontent.com/55943803/130876646-d284a8ea-380e-4958-bf86-dc75caa3b1db.png)
+
